@@ -18,6 +18,9 @@
   border-radius: 5px;
   resize: none; /* Prevents resizing */
 }
+p {
+  color:chocolate;
+}
 
     </style>
  </head>
@@ -26,7 +29,16 @@
     <!-- this will visible when i will mouse on the text -->
     <P title="Thank You Centilytics">This is my html paragraph</P>
     <a href="https://www.centilytics.com/">click here</a>
-    <h2>Our Diverse Culture Includes:</h2>
+    <h1 id="main-heading" style="color: aqua;">Welcome to our organization</h1>
+    <p id="intro"><i>Choose the platform where we will solve your problems</i></p>
+    <button id="submit-btn">Click Me</button>
+    <div>
+      <h3>About Our Company</h3>
+      <p><i>We work on cloud management, AI, and Blockchain.</i></p>
+  </div>
+
+
+    <strong>Our Diverse Culture Includes:</strong>
     <!-- Unordered list -->
      <ul>
       <li>Progressive</li>
@@ -71,14 +83,22 @@
         <td>Utkarsh Deshmukh</td>
         </tr>
         </table>
-        <h2> fill the below form to reach out us !</h2>
+        <p class="highlighted"> <h2><i>fill the below form to reach out us !<i></h2></p>
         <form action="">
          Username<input type="text">
          Email<input type="email"><br><br>
          contact No.<input type="tel"><br><br>
-         <textarea>Address</textarea>
-         Upload Resume<input type="file">
-         <input type="submit">
+         <select>
+          <option value="">-country</option>
+          <option value="">-India</option>
+          <option value="">-USA</option>
+          <option value="">-UK</option>
+          <option value="">-China</option>
+
+         </select><br><br>
+         <textarea>Address:-</textarea><br><br>
+         Upload Resume<input type="file"><br><br>
+         <button class="btn">Submit</button>
 
 
         </form>

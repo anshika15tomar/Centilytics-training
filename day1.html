@@ -1,108 +1,149 @@
-<!-- firts day of  frontend training  -->
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Frontend Training</title>
     <style>
-      table, th, td {
-  border:1px solid black;
-      }
-      textarea {
-  width: 30%;
-  height: 100px;
-  padding: 10px;
-  font-size: 16px;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  resize: none; /* Prevents resizing */
-}
-p {
-  color:chocolate;
-}
-
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: cadetblue;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        section {
+            padding: 30px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        #intro-section {
+            background: #f2f2f2;
+            text-align: center;
+        }
+        #about-section {
+            background: #e8f4f8;
+        }
+        #culture-section {
+            background: #ffe4c4;
+        }
+        #form-section {
+            background: #d8bfd8;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .btn {
+            background-color: cadetblue;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: darkcyan;
+        }
     </style>
- </head>
- <body >
-    <h1>FRONTEND TRAINING </h1>
-    <!-- this will visible when i will mouse on the text -->
-    <P title="Thank You Centilytics">This is my html paragraph</P>
-    <a href="https://www.centilytics.com/">click here</a>
-    <h1 id="main-heading" style="color: aqua;">Welcome to our organization</h1>
-    <p id="intro"><i>Choose the platform where we will solve your problems</i></p>
-    <button id="submit-btn">Click Me</button>
-    <div>
-      <h3>About Our Company</h3>
-      <p><i>We work on cloud management, AI, and Blockchain.</i></p>
-  </div>
+</head>
+<body>
 
+<header>
+    <h1>FRONTEND TRAINING</h1>
+</header>
 
-    <strong>Our Diverse Culture Includes:</strong>
-    <!-- Unordered list -->
-     <ul>
-      <li>Progressive</li>
-      <li>Centilytics</li>
-      <li>Zarthi</li>
-      <li>WorkElevate</li>
+<!-- Introduction Section -->
+<section id="intro-section">
+    <h1>Welcome to Our Organization</h1>
+    <p><i>Choose the platform where we will solve your problems</i></p>
+    <button class="btn"><a href="https://www.zarthi.com/">Click Me</a></button>
+</section>
+
+<!-- About Section -->
+<section id="about-section">
+    <h2>About Our Company</h2>
+    <p><i>We work on Cloud Management, AI, and Blockchain.</i></p>
+    <a href="https://www.centilytics.com/">Click Here to Visit</a>
+</section>
+
+<!-- Culture Section -->
+<section id="culture-section">
+    <h2>Our Diverse Culture Includes:</h2>
+    <ul>
+        <li>Progressive</li>
+        <li>Centilytics</li>
+        <li>Zarthi</li>
+        <li>WorkElevate</li>
     </ul>
-    <!-- this is i am writing for discriptive lists -->
-    <dl>
-      <dt>Centilytics</dt>
-      <dd>- Cloud Management Platfrom</dd>
-      <dt>Zarthi</dt>
-      <dd>- Pay-as-you-go </dd>
-    </dl>
-    <!-- below is the image tag -->
-    <img src="https://imgs.search.brave.com/2eMy4ll-GS5q9jhQzrerclUV31cRVkAIFBrhjdv0OAM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb21w/YXJlY2FtcC5jb20v/bWVkaWEvdXBsb2Fk/cy8yMDE5LzAzL2Nl/bnRpbHl0aWNzLWxv/Z28ucG5n" alt="centilytics" width="100%" height="100%">
-    <!-- Created a table -->
+</section>
+
+<!-- Table Section -->
+<section>
+    <h2>Company Employee Details</h2>
     <table>
-      <tr>
-        <th width="100">Company</th>
-        <th width="100">Profiles</th>
-        <th width="100">Employee Name</th>
-      </tr>
-      <tr>
-        <td>progressive</td>
-        <td>frontend</td>
-        <td>Anshika Tomar</td>
-      </tr>
-      <tr>
-        <td> Centilytics</td>
-        <td>backend</td>
-        <td>Avi Agrawal</td>
-      </tr>
-      <tr>
-        <td>Zarthi</td>
-        <td>Product</td>
-        <td>Uday Bhorker</td>
-      </tr>
-      <tr>
-        <td>Centilytics</td>
-        <td>Cloud</td>
-        <td>Utkarsh Deshmukh</td>
+        <tr>
+            <th>Company</th>
+            <th>Profiles</th>
+            <th>Employee Name</th>
         </tr>
-        </table>
-        <p class="highlighted"> <h2><i>fill the below form to reach out us !<i></h2></p>
-        <form action="">
-         Username<input type="text">
-         Email<input type="email"><br><br>
-         contact No.<input type="tel"><br><br>
-         <select>
-          <option value="">-country</option>
-          <option value="">-India</option>
-          <option value="">-USA</option>
-          <option value="">-UK</option>
-          <option value="">-China</option>
+        <tr>
+            <td>Progressive</td>
+            <td>Frontend</td>
+            <td>Anshika Tomar</td>
+        </tr>
+        <tr>
+            <td>Centilytics</td>
+            <td>Backend</td>
+            <td>Avi Agrawal</td>
+        </tr>
+        <tr>
+            <td>Zarthi</td>
+            <td>Product</td>
+            <td>Uday Bhorker</td>
+        </tr>
+        <tr>
+            <td>Centilytics</td>
+            <td>Cloud</td>
+            <td>Utkarsh Deshmukh</td>
+        </tr>
+    </table>
+</section>
 
-         </select><br><br>
-         <textarea>Address:-</textarea><br><br>
-         Upload Resume<input type="file"><br><br>
-         <button class="btn">Submit</button>
+<!-- Form Section -->
+<section id="form-section">
+    <h2>Fill the Form to Reach Out to Us</h2>
+    <form>
+        Username: <input type="text"><br><br>
+        Email: <input type="email"><br><br>
+        Contact No.: <input type="tel"><br><br>
+        Country:
+        <select>
+            <option value="">- Select Country -</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="China">China</option>
+        </select><br><br>
+        <textarea placeholder="Enter Address"></textarea><br><br>
+        Upload Resume: <input type="file"><br><br>
+        <button class="btn">Submit</button>
+    </form>
+</section>
 
+<!-- Footer -->
+<footer>
+    <h3>Contact Us</h3>
+</footer>
 
-        </form>
-
-
- </body>
- </html>
+</body>
+</html>

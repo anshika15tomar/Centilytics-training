@@ -16,6 +16,7 @@
 </header>
 
 <!-- Introduction Section -->
+ 
 <section id="intro-section">
     <h1>Welcome to Our Organization</h1>
     <p><i>Choose the platform where we will solve your problems</i></p>
@@ -43,6 +44,7 @@
 <!-- Table Section -->
 <section>
     <h2>Company Employee Details</h2>
+    <div style="overflow-x: auto;">
     <table>
         <tr>
             <th>Company</th>
@@ -70,12 +72,15 @@
             <td>Utkarsh Deshmukh</td>
         </tr>
     </table>
+    </div>
 </section>
 
 <!-- Form Section -->
 <section id="form-section">
     <h2>Fill the Form to Reach Out to Us</h2>
-    <form>
+    <div id="main">
+        
+    <form id="login">
         Username: <input type="text"><br><br>
         Email: <input type="email"><br><br>
         Contact No.: <input type="tel"><br><br>
@@ -89,8 +94,9 @@
         </select><br><br>
         <textarea placeholder="Enter Address"></textarea><br><br>
         Upload Resume: <input type="file"><br><br>
-        <button class="btn">Submit</button>
+        <button class="btn" style="cursor: progress;">Submit</button>
     </form>
+    </div>
 </section>
 
 <!-- Footer -->

@@ -1,7 +1,14 @@
 body {
     font-family: Arial, sans-serif;
+    /*background-image:url("") ;
+    background-repeat: no-repeat;
+    background-size:100% 100% ;*/
     margin: 0;
     padding: 0;
+
+}
+header{
+    text-shadow: 1px 1px 2px black , 0 0 25px blue, 0 0 5px darkblue;
 }
 header, footer {
     background-color: cadetblue;
@@ -14,28 +21,101 @@ section {
     margin: 20px;
     border-radius: 10px;
 }
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-100px); /* Move from left */
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0); /* Move to original position */
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(100px); /* Move from right */
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0); /* Move to original position */
+        opacity: 1;
+    }
+}
+
 #intro-section {
+    animation: slideRight 3s infinite ; /* Left to Right */
     background: #f2f2f2;
     text-align: center;
 }
+
 #about-section {
+    animation: slideLeft 3s infinite ; /* Right to Left */
     background: #e8f4f8;
+    text-align: center;
 }
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-100px); /* Move from left */
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0); /* Move to original position */
+        opacity: 1;
+    }
+}
+    /*width: 50%;
+    margin-left: 50%;*/
+
 #culture-section {
+    animation: slideRight 3s infinite ;
     background: #ffe4c4;
+    text-align: center;
 }
 #form-section {
     background: #d8bfd8;
     text-align: center;
 }
 table {
+    border-collapse: separate; /* Allows border-radius to work */
+    border-spacing: 0; /* Removes gaps between cells */
     width: 100%;
-    border-collapse: collapse;
+    border: 2px solid black;
+    border-radius: 10px; /* Rounded corners for the table */
+    overflow: hidden; /* Ensures the rounded corners are visible */
 }
-table, th, td {
+
+th, td {
     border: 1px solid black;
     padding: 10px;
     text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Round only the table's outer corners */
+table tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+
+table tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+tr:hover{
+    background-color: skyblue;
 }
 .btn {
     background-color: cadetblue;
@@ -47,3 +127,10 @@ table, th, td {
 .btn:hover {
     background-color: darkcyan;
 }
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

@@ -14,7 +14,7 @@ header, footer {
     background-color: cadetblue;
     padding: 20px;
     text-align: center;
-    color: white;
+    color:aliceblue;
 }
 section {
     padding: 30px;
@@ -72,11 +72,13 @@ section {
 #culture-section {
     animation: slideRight 3s infinite ;
     background: #ffe4c4;
+    justify-items: center;
     text-align: center;
 }
 #form-section {
     background: #d8bfd8;
     text-align: center;
+    
 }
 table {
     border-collapse: separate; /* Allows border-radius to work */
@@ -133,4 +135,63 @@ tr:hover{
     justify-content: center;
     align-items: center;
 }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 30px;
+}
+/*.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    
+}*/
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links2 {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links2 li {
+    margin: 0 15px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    width: 10px;
+    height: 10px;
+}
+.nav-links2 a {
+    text-decoration: none;
+    color: white;
+    width: 10px;
+    height: 10px;
+}
 
+.nav-links a:hover {
+    color: yellow;
+}
+.nav-links2 a:hover {
+    color: blue;
+}
+.user-icon {
+    font-size: 24px;  /* Adjust icon size */
+    color: white;  /* Change icon color */
+    margin-left: 20px; /* Adjust spacing */
+    cursor: pointer; /* Show pointer on hover */
+}
+
+.user-icon:hover {
+    color: yellow; /* Change color on hover */
+}
+img{
+    width:30px;
+    
+}

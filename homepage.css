@@ -103,6 +103,18 @@ body {
   font-size: 1em;
   border-radius: 5px;
 }
+.res-login-btn {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  width: 8%;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 5px;
+
+} 
 
 hr {
   border: 1px solid #2d6085;
@@ -185,6 +197,7 @@ hr {
   flex-direction: row;
   border-radius:5px;
 }
+
 .match-btn{
   margin-left: 8vh;
 }
@@ -214,7 +227,7 @@ hr {
 
 .match-btn:hover,
 .video-btn:hover {
-  background-color: darkred;
+  background-color:darkblue;
 }
 
 .highlight {
@@ -251,11 +264,12 @@ hr {
 }
 
 .highlight h1 {
-  font-size: 2em;
+  font-size: 3em;
   margin-bottom: 0px;
   color: white;
   margin-top: 10px;
   text-decoration: none;
+  
   /* Reduced from 20% */
 }
 
@@ -269,10 +283,10 @@ hr {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 1024px) {
+ @media screen and (max-width: 1024px) {
   .sidebar {
     width: 200px;
-  }
+  } 
 
   .main-content {
     margin-left: 200px;
@@ -286,6 +300,7 @@ hr {
     height: auto;
     position: relative;
     padding-bottom: 10px;
+    
   }
 
   .main-content {
@@ -298,7 +313,7 @@ hr {
     flex-direction: column;
     text-align: center;
   }
-}
+} 
 
 #p1 {
   border-right: white;

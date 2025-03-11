@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+       
+       body{
+            background-color:cyan;
+        }
+        
+        .form1 , .form2 , .form3{
+            height: 150px;
+            width: 300px;
+            border: 2px dotted black ;
+            padding-top: 30px;
+            margin: 10px;
+            padding-left: 5px;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .margin {
+            margin-bottom: 20px;
+        }
+        #noforms{
+            font-size: 30px;
+            font-weight: 600;
+             }
+       
+    </style>
+</head>
+<body>
+    <h1>
+       <strong> Finding the number of forms:</strong>
+    </h1>
+    <div class="form1">
+    <form action="">
+        First Name:<input type="text" name="fname" value="Anshika" class="margin"><br/>
+        Last name:<input type="text" name="fname" value="Tomar" class="margin"><br/>
+        <input type="submit" value="submit">
+    </form>
+    </div>
+    <div class="form2">
+    <form action="">
+        First Name:<input type="text" name="fname" value="Mahak" class="margin"><br/>
+        Last name:<input type="text" name="fname" value="Jat" class="margin"><br/>
+        <input type="submit" value="submit">
+    </form> 
+    </div>
+    <div class="form3">
+    <form action="">
+        First Name:<input type="text" name="fname" value="Harshita" class="margin"><br/>
+        Last name:<input type="text" name="fname" value="Nagar" class="margin"><br/>
+        <input type="submit" value="submit">
+    </form>
+    </div>
+    <p id="noforms"></p>
+    <script>
+        document.getElementById("noforms").innerHTML =
+        "Number of forms: " + document.forms.length;
+        </script>
+</body>
+</html>

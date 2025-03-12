@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom project 2</title>
+<head>
+  <style>
+    #box {
+      width: 400px;
+      height: 300px;
+      position: relative;
+      background:lime;
+      overflow: hidden;
+    }
+    #ball {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      background: red;
+      border-radius: 50%;
+    }
+  </style>
+</head
+<body>
+
+<div id="box">
+  <div id="ball"></div>
+</div>
+
+<script>
+  let ball = document.getElementById("ball");
+  let pos = 0, speed = 2, direction = 1;
+  
+  function bounce() {
+    pos += speed * direction;
+    if (pos >= 270 || pos <= 0) {
+      direction *= -1; 
+    }
+    ball.style.top = pos + "px";
+    requestAnimationFrame(bounce);
+  }
+  
+  bounce();
+</script>
+
+</body>
+</html>

@@ -1,283 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cricket Homepage</title>
+    <title>ECB Homepage</title>
     <link rel="stylesheet" href="homepage.css">
-    <!-- <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-        }
-         nav {
-            display: flex;
-            justify-content: center;
-            background-color: #005bb5;
-            padding: 10px;
-            height: 6em;
-            padding-left: 80%;
-        }
-       
-        nav a:hover {
-            background-color: #003f7f;
-            border-radius: 5px;
-        }
-         .res-nav .btn{
-            background-color: red;
-  color: white;
-  /* padding: 10px; */
-  
-  margin-top: 4px;
-  margin-bottom: 8px;
-  padding-right: 45px;
-  padding-bottom: 20px;
-
-  border: none;
-  height: 60px;
-  width: 30%;
-  cursor: pointer;
-  font-size: 1em;
-  border-radius: 5px;
-  display: flex;
-  flex: 0;
-  /* padding-bottom: 5%;
-  padding-right: 0%; */
-  text-align: center;
-         }
-       
-      .res-left {
-        display: none;
-      }  
-      @media screen and (max-width:900) {
-
-        .res-left{
-            display: block;
-        }
-        
-      }
-    </style> -->
-</head>
-
+  </head>
 <body>
-    <div class="webpage">
-       
-    
-        <div class="sidebar">
+    <div class="container">
+      <header class="nav-container">
+        <div class="wrapper">
+          <div class="icon">
             <img src="assets\englan-cricket-board.png" class="ECB-logo">
-            <button class="login-btn">LOGIN</button>
-
-            <ul class="side-menu">
-               
-                <li class="li-1">
-                    <h6>MATCHES</h6>
-                    <div class="hidden">
-                        <h1> MATCHES</h1>
-                        <div class="hidden-div-container">
-                            <div class="hidden-div">
-                                <h2>Schedules</h2>
-                                <h3>Live SCores</h3>
-                                <h3>Next 7 Days</h3>
-                                <h3>All England Fixtures</h3>
-                                <h3>All England Results</h3>
-                           </div>
-   
-                           <div class="hidden-div">
-                               <h2>England</h2>
-                               <h3>Fixtures</h3>
-                               <h3>Results</h3>
-                               <h3>Tables</h3>
-                               
-                          </div>
-   
-                          <div class="hidden-div">
-                           <h2>Country</h2>
-                           <h3>Follow Live</h3>
-                           <h3>Fixtures</h3>
-                           <h3>Results</h3>
-                           <h3>Tables</h3>
-                           
-                      </div>
-   
-                      <div class="hidden-div">
-                       <h2>Others</h2>
-                       <h3>Rachael Heyhoe Flint Trophy</h3>
-                       <h3>Charlotte Edwards Cup</h3>
-                       <h3>Your Team</h3>
-                       <h3>All International</h3>
-                       <h3>Current Standings</h3>
-                  </div>
-                       
-                        </div>
-                    
-                      </div>
+          </div>
+          <div class="nav-contents">
+            <a href="#">Login</a>
+            <div class="contents-wrapper">
+              <div class="menu-wrapper">
+              <span>Menu </span>
+                <ul id="menu">
+                <li id="first-row"></li>
+                <li id="mid-row"></li>
+                <li id="last-row"></li>
+                </ul>
+              </div>
+            <ul class="nav-el">
+              <div class="li-wrapper" id="matches">
+                <li>
+                  <img src="assets\cricket-ball.png" alt="">
+                  <span>Matches</span>
+                  <img src="assets\right-arrow.png" alt="" class="rightarrowMobile">
                 </li>
-                <li class="li-2 ">
-                    <h6>ENGLAND</h6>
-                    <div class="hidden hidden-2">
-                        <div class="logo-ecb"><img src="assets\We_are_england_cricket.png" ></div>
-                        <div class="hidden-div-container">
-                            <div class="hidden-div">
-                                <h2>England Men</h2>
-                                <h3>Home</h3>
-                                <h3>News</h3>
-                                <h3>Fixtures & Results</h3>
-                                <h3>Starts</h3>
-                                <h3>Players</h3>
-                                <h3>Tickets</h3>
-                                
-                           </div>
-   
-                           <div class="hidden-div">
-                            <h2>England Women</h2>
-                            <h3>Home</h3>
-                            <h3>News</h3>
-                            <h3>Fixtures & Results</h3>
-                            <h3>Stats</h3>
-                            <h3>Players</h3>
-                            <h3>Tickets</h3>
-                            
-                          </div>
-   
-                          <div class="hidden-div">
-                           <h2>England Pathways</h2>
-                           <h3>News</h3>
-                           <h3>England Lions</h3>
-                           <h3>England Women A</h3>
-                           <h3>England Men U19</h3>
-                           <h3>England Women U19</h3>
-                      </div>
-   
-                      <div class="hidden-div">
-                       <h2>England Disability</h2>
-                       <h3>News</h3>
-                       <h3>Fixtures & Results</h3>
-                       <h3></h3>
-                       </div>
-                       
-                       
-                       </li>
-                     <li><h6>DOMESTIC</h6></li>
-                     <li><h6>PLAY</h6></li>
-                     <li><h6>BE INVOLVED</h6></li>
-                     <li><h6>VIDEO</h6></li>
-                     <li><h6>ABOUT</h6></li>
-                     <li><h6>EDI</h6></li>
 
-
-                    
-            </ul>
-        
-        </div>
-        <div class="main-div">
-        <div class="main-content">
-                <!-- <div class="res-left">
-                <div class="res-nav">
-                <nav>
-                <div class="btn">
-                <button class="res-login-btn">LOGIN</button>
+                <div class="expand" id="expand-matches">
+                  <div class="expand-child">
+                    <div class="heading">
+                      <h2>MATCHES</h2>
+                    </div>
+                    <div class="cols">
+                      <ul class="col-4">
+                        <h4>Schedule</h4>
+                        <li>Live Scores</li>
+                        <li>Next 7 Days</li>
+                        <li>All England Fixtures</li>
+                        <li>All England Results</li>
+                      </ul>
+                      <ul class="col-4">
+                        <h4>England</h4>
+                        <li>Fixtures</li>
+                        <li>Results</li>
+                        <li>Tables</li>
+                      </ul>
+                      <ul class="col-4">
+                        <h4>Country</h4>
+                        <li>Follow Live</li>
+                        <li>Fixtures</li>
+                        <li>Results</li>
+                        <li>Tables</li>
+                      </ul>
+                      <ul class="col-4">
+                        <h4>Other</h4>
+                        <li>Rachael Heyhoe Flint Trophy</li>
+                        <li>Charlotte Edwards Cup</li>
+                        <li>Your Team</li>
+                        <li>All International</li>
+                        <li>Current Standings</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="li-wrapper" id="england">
+                <li>
+                  <img src="assets\england-crick-team-logo.png" alt="">
+                  <span>England</span>
+                  <img src="assets\right-arrow.png" alt="" class="rightarrowMobile">
+                </li>
+                <div class="expand" id="expand-england">
+                  <div class="expand-child">
+                    <div class="heading">
+                      <img src="assets\We_are_england_cricket.png" alt="" class="logo-ecb">
+                    </div>
+                    <div class="cols">
+
+                      <ul class="col-4">
+                        <h4>England Men</h4>
+                        <li>Home</li>
+                        <li>News</li>
+                        <li>Fixtures &amp; Results</li>
+                        <li>Stats</li>
+                        <li>Players</li>
+                        <li>Tickets</li>
+                      </ul>
+                      <ul class="col-4">
+                        <h4>England Women</h4>
+                        <li>Home</li>
+                        <li>News</li>
+                        <li>Fixtures &amp; Results</li>
+                        <li>Stats</li>
+                        <li>Players</li>
+                        <li>Tickets</li>
+                      </ul>
+                      <ul class="col-4">
+                        <h4>England Pathways</h4>
+                        <li>News</li>
+                        <li>England Lions</li>
+                        <li>England Women A</li>
+                        <li>England Men U19</li>
+                        <li>England Women U19</li>
+                      </ul>
+                      <ul class="col-4">
+                        <h4>England Disability</h4>
+                        <li>News</li>
+                        <li>Fixtures &amp; Results</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <li>
+                <img src="assets\cricket-hat.png" alt=""><span>Domestic</span>
+                  <img src="assets\right-arrow.png" alt="" class="rightarrowMobile">
+
                 
-                </nav>
-                </div>
-                </div> -->
-            <div class="top-bar">
-                <div class="left-text">
-                    <p id="p1" style="font-size:9px;">1st Test, Day 5, New Zealand v England 2023
-                    </p>
+              </li>
+              <li>
+                <img src="assets\wicket-with-bat.png" alt=""><span>Play</span>
+                  <img src="assets\right-arrow.png" alt="" class="rightarrowMobile">
 
-                    <p id="p2">England win by 267 runs</p>
-                </div>
-
-                <div class="right-text">
-                    <hr/>
-                   <div>
-                    <p>New Zealand
-                        <span style="color:deepskyblue">306 & 126</span> <span style="color:dodgerblue;">14 /20</span>
-                    </p>
-
-                    <p>England Men 325/9 & 374 15/20</p>
-                   </div>
-
-                </div>
-                <hr/>
-
-                <button class="match-btn">
-                    <p class="view">VIEW MATCH</p>
-                    <img src="assets\right-arrow.png" alt="arrow" class="arrow-img">
-                </button>
+              </li>
+              <li>
+                <img src="assets\group-people.png" alt=""><span>Be Involved</span>
+                  <img src="assets\right-arrow.png" alt="" class="rightarrowMobile">
+              </li>
+              <li>
+                <img src="assets\line-play.png" alt=""><span>Video</span>
+                <img src="assets\right-arrow.png" alt="" class="rightarrowMobile">
+              </li>
+              <li><img src="#" alt=""><span>About</span>
+                <img src="assets\right-arrow.png" alt="" class="rightarrowMobile">
+              </li>
+              <li><img src="#" alt=""><span>EDI</span>
+                <img src="assets\right-arrow.png" alt="" class="rightarrowMobile">
+              </li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </header>
+      <div class="main-content">
+        <section class="header">
+          <div id="header-text">
+            <div class="header-child" id="header-text-child-1">
+              <span>1st Test, Day 5, New Zealand v England 2023 </span>
+              <h6 class="heading2">England win by 267 runs</h6>
             </div>
-            <div class="highlight">
-                <div class="highlight-upper">
-                <div class="highlight-heading">
-                    <div class="time-duration">
+            <div class="header-child" id="header-text-child-2">
+              <p class="heading1">
+                New Zealand <span id="score">306 &amp; 126</span>
+                <span id="wickets">14/20</span>
+              </p>
+              <p class="heading1">England Men 325/9 &amp; 374 15/20</p>
+            </div>
+          </div>
+          <div id="view-match">
+            <a href="#"><span>View match</span><img src="assets\right-arrow.png" alt=""></a>
+          </div>
+        </section>
+        <section class="content-body">
+          <div class="bg-image">
+            <div class="headline">
+               <div class="time-duration">
                         <img src="assets\play-transparent.png" alt="">
                         <span>07:08</span>
                     </div>
-                    <a class="heading_link" href="https://jayant061.github.io/ecb-homepage/">
-                        <h1>HIGHLIGHTS | BRUTAL BATTING AND <br/>DISCIPLINED BOWLING HELPS ENGLAND<br/> TO
-                                        RECORD-BREAKING WIN</h1>
-                        <p style="color: rgb(14, 156, 208); font-size: small;">22 February 2023</p>
+              <div class="headline-heading">
+                <a href="https://www.ecb.co.uk/video/3077569/highlights-brutal-batting-and-disciplined-bowling-helps-england-to-record-breaking-win">
+                  HIGHLIGHTS | BRUTAL BATTING AND DISCIPLINED BOWLING HELPS
+                  ENGLAND TO RECORD-BREAKING WIN
+                </a>
+              </div>
+              <div class="date">
+                <span>22 February 2023</span>
+              </div>
+              <div class="video-link">
+                <a href="https://www.ecb.co.uk/video/3077569/highlights-brutal-batting-and-disciplined-bowling-helps-england-to-record-breaking-win"><span>Watch Video</span><img src="assets\right-arrow.png" alt=""></a>
+              </div>
+            </div>
+            <div class="container-1">
+              <div class="card1">
+                  <!-- <img src="assets/card-1.png" alt="card1"> -->
+                  <div class="time-duration">
+                      <img src="assets\play-transparent.png" alt="">
+                      <span>07:08</span>
+                  </div>
+                   <a href="https://jayant061.github.io/ecb-homepage/" class="card-heading1">
+                      <h1> HIGHLIGHTS | BRUTAL BATTING AND DISCIPLINED BOWLING HELPS ENGLAND <br>TO
+                                      RECORD-BREAKING WIN</h1>
+                      <p style="color: rgb(14, 156, 208); font-size: small;">22 February 2023</p>
+                  </a>
+                    
+
+                 
+              </div>
+              <div class="card2">
+                  <!-- <img src="assets/card-2.png" alt="card2"> -->      
+              <a href="https://jayant061.github.io/ecb-homepage/" class="card-heading2">
+                  
+                      <p style="color: white;">Vitality Blast 2023<br/> tickets are on sale now!</p>
+                      <span >Get your tickets to this year's Vitality Blast and cheer
+                        your team on to Finals Day!</span> 
+                        <p style="color: rgb(14, 156, 208); font-size: small;" class="date">22 February 2023</p>
                     </a>
-                   </div>
-    
-                    <button class="match-btn watch-video">
-                        WATCH VIDEO
-                        <img src="assets\right-arrow.png" alt="arrow" class="arrow-img">
-                    </button>
-                </div>
-                <div class="container">
-                    <div class="card1">
-                        <!-- <img src="assets/card-1.png" alt="card1"> -->
-                        <div class="time-duration">
-                            <img src="assets\play-transparent.png" alt="">
-                            <span>07:08</span>
-                        </div>
-                         <a href="https://jayant061.github.io/ecb-homepage/" class="card-heading1">
-                            <h1> HIGHLIGHTS | BRUTAL BATTING AND DISCIPLINED BOWLING HELPS ENGLAND <br>TO
-                                            RECORD-BREAKING WIN</h1>
-                            <p style="color: rgb(14, 156, 208); font-size: small;">22 February 2023</p>
-                        </a>
-                          
-
-                       
                     </div>
-                    <div class="card2">
-                        <!-- <img src="assets/card-2.png" alt="card2"> -->      
-                    <a href="https://jayant061.github.io/ecb-homepage/" class="card-heading2">
-                        
-                            <p style="color: white;">Vitality Blast 2023<br/> tickets are on sale now!</p>
-                            <span >Get your tickets to this year's Vitality Blast and cheer
-                              your team on to Finals Day!</span> 
-                              <p style="color: rgb(14, 156, 208); font-size: small;" class="date">22 February 2023</p>
-                          </a>
-                          </div>
-                    <div class="card3">
-                        <div class="time-duration">
-                            <img src="assets\play-transparent.png" alt="">
-                            <span>07:08</span>
-                        </div>
-                         <a href="https://jayant061.github.io/ecb-homepage/" class="card-heading3">
-                            <h1>Crossy's Coffee Club | Episode 4 | Nat Sciver-Brunt</h1>
-                            <p style="color: rgb(14, 156, 208); font-size: small;">22 February 2023</p>
-                        </a>          
-                    </div>
+              <div class="card3">
+                  <div class="time-duration">
+                      <img src="assets\play-transparent.png" alt="">
+                      <span>07:08</span>
+                  </div>
+                   <a href="https://jayant061.github.io/ecb-homepage/" class="card-heading3">
+                      <h1>Crossy's Coffee Club | Episode 4 | Nat Sciver-Brunt</h1>
+                      <p style="color: rgb(14, 156, 208); font-size: small;">22 February 2023</p>
+                  </a>          
+              </div>
 
+          </div>
+          </div>
+        </section>
+      </div>
+    </div> 
+    <div class="allcards">
+      <div class="first-card">
+    <img class="res-card" src="assets\card-1.png" alt="">
+    <div class="card-el">
+      <div class="time-duration">
+        <img src="assets\play-transparent.png"  alt="" />
+        <span>07:08</span>
+      </div>
+      <p>
+        Highlights | Brutal batting and disciplined bowling helps
+        England to record-breaking win
+      </p>
+      <div class="date">
+        <span>22 February 2023</span>
+      </div>
+      </div>
+      </div>
+      <div class="second-card" >
+      <img class="res-card" src="assets\card-2.png"  alt="">
+      <div class="card-el">
+        <p>Vitality Blast 2023 tickets are on sale now!</p>
+        <span
+          >Get your tickets to this year's Vitality Blast and cheer
+          your team on to Finals Day!</span
+        >
+        <div class="date">
+          <span>22 February 2023</span>
+        </div>
+      </div>
+      </div>
+      <div class="third-card" >
+      <img class="res-card" src="assets\card-3.png"  alt="">
+                <div class="card-el">
+                  <div class="time-duration">
+                    <img src="assets\play-transparent.png" alt="" />
+                    <span>07:08</span>
+                  </div>
+                  <p>Crossy's Coffee Club | Episode 4 | Nat Sciver-Brunt</p>
+                  <div class="date">
+                    <span>22 February 2023</span>
+                  </div>
                 </div>
-            </div>
-            <div>
-
-            </div>
-        </div>
-        </div>
-    </div>
-
-
-</body>
-
+                </div>
+  </body>
 </html>

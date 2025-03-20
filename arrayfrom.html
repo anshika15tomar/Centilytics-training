@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <h1>Array.from and shallow & deep copy</h1>
+    <p>(go to console to see the output)</p>
+    <script>
+        console.log(Array.from("foo"));
+
+
+console.log(Array.from([1, 2, 3], (x) => x + x));
+
+let original = [{ a: 1 }, { b: 2 }];
+let shallowCopy = [...original];
+
+shallowCopy[0].a = 99;
+
+console.log(original); 
+console.log(shallowCopy);  
+
+let original1 = { x: 1, y: { z: 2 } };
+let deepCopy = JSON.parse(JSON.stringify(original1));
+
+deepCopy.y.z = 99;
+
+console.log(original1); 
+console.log(deepCopy);  
+
+let person = {
+    "name":"abc",
+    "age": 20,
+    "city":"bhopal"
+    };
+    let jsonString = JSON.stringify(person);
+    console.log(jsonString);
+    console.log(person.name);
+    console.log(person.city);
+
+
+    </script>
+</body>
+</html>

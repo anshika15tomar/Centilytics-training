@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before After Example</title>
+    <style>
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: 2px solid black;
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+        }
+
+        /* Adding icon before */
+        .button::before {
+            content: "🔹 ";
+            color: blue;
+        }
+
+        /* Adding icon after */
+        .button::after {
+            content: " ➜";
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="button">Click Me</div>
+
+</body>
+</html>
